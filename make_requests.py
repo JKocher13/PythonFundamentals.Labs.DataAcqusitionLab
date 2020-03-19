@@ -5,10 +5,11 @@ import requests
 
 a = 0
 offset_count = 1
+token = INSTERT TOKEN HERE
 while a <= 39:
 	name = ("location_" + str(a))
 	url = 'https://www.ncdc.noaa.gov/cdo-web/api/v2/locations?location&limit=1000&offset=' +str(offset_count)
-	header = {"token": "ZmqmkkvwvZxdtlLSHXkopRdvSoAJtPWa",
+	header = {"token": token,
 	            'Content-Type' :  'application/json'}
 	#r = requests.get(url, headers= headers)
 	request = requests.get(url, headers = header)
