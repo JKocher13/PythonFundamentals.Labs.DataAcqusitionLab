@@ -22,7 +22,7 @@ def create_file(name, data):
 
 file_counter = 0
 offset_count = 1
-token = "ZmqmkkvwvZxdtlLSHXkopRdvSoAJtPWa"
+token = sys.argv[1]
 url_base = 'https://www.ncdc.noaa.gov/cdo-web/api/v2/locations?location&limit=1000&offset='
 header = {"token": token, 'Content-Type': 'application/json'}
 
