@@ -2,6 +2,7 @@ import json
 import urllib.request
 import urllib.parse
 import requests
+import sys
 
 def build_url(url_base, offset_count):
 	url = url_base + str(offset_count)
